@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Question 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-decor" aria-hidden="true">
+    <span>🌸</span><span>💗</span><span>🌷</span><span>💕</span>
+    <span>🌼</span><span>💖</span><span>🌸</span><span>💞</span>
+    <span>🌷</span><span>💗</span><span>🌼</span><span>💖</span>
+  </div>
+
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">a tiny website, a big question</p>
+      <h1 class="title">For Someone Special <span>♡</span></h1>
+      <p class="subtitle">Aku punya satu pertanyaan buat kamu...</p>
+    </header>
+
+    <section class="question-card" id="questionCard">
+      <div class="mini-heart" aria-hidden="true">♥</div>
+      <h2>Maukah kamu menjadi pacarku?</h2>
+      <p class="hint">Jawab dengan jujur yaa ✨</p>
+      <div class="buttons" id="buttonsArea">
+        <button class="btn btn-yes" id="yesBtn">Ya 💖</button>
+        <button class="btn btn-no" id="noBtn">Tidak 🙈</button>
+      </div>
+      <p class="tiny-note">Psst... coba tekan “Tidak” 😋</p>
+    </section>
+
+    <section class="success-card hidden" id="successCard" aria-live="polite">
+      <div class="celebration" aria-hidden="true">💐 💗 ✨</div>
+      <h2>Yayyy! We are officially in a relationship! 💞</h2>
+      <p>Thank you for saying yes. Semoga kita bisa bikin banyak cerita indah bareng! 🌷</p>
+      <div class="music-box">
+        <h3>Our little soundtrack 🎶</h3>
+        <p class="music-help">Pilih file lagu dari perangkatmu untuk memutarnya. Lagu tidak diunggah ke internet.</p>
+        <label class="file-label" for="songFile">Pilih lagu 🎵</label>
+        <input type="file" id="songFile" accept="audio/*">
+        <p class="file-name" id="fileName">Belum ada lagu yang dipilih</p>
+        <audio id="audioPlayer" controls class="audio-player"></audio>
+      </div>
+      <button class="btn btn-again" id="againBtn">Lihat lagi 💌</button>
+    </section>
+
+    <footer>made with a little courage & lots of 💗</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
